@@ -28,6 +28,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Reference Include="SimpleResults">
+			<HintPath>..\..\SimpleResults\SimpleResults\bin\$(Configuration)\$(TargetFramework)\SimpleResults.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
 		<Using Include="System" />
 		<Using Include="System.Collections.Generic" />
 		<Using Include="System.Linq" />
