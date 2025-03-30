@@ -9,7 +9,13 @@ public class VendorPartNumber
 
     public int ItemId { get; set; }
 
+    public required string ItemFullName { get; set; }
+
+    public string? ItemPartNumber { get; set; }
+
     public int VendorId { get; set; }
+
+    public required string VendorName { get; set; }
 
     [Required]
     public required string PartNumber { get; set; }
