@@ -40,5 +40,7 @@
 		<Using Include="System.Threading" />
 		<Using Include="System.Threading.Tasks" />
 		<Using Include="Microsoft.Extensions.Logging" />
+		<Using Include="MediatR" />
+		<Using Include="SimpleResults" />
 	</ItemGroup>
 </Project>
