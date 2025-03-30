@@ -25,3 +25,17 @@ public class Item
     [Column(TypeName = "decimal(15,5)")]
     public decimal Cost { get; set; }
 }
+
+internal static class ItemExtensions
+{
+    public static Item AsModel(this Entities.Item entity) => new Item()
+    {
+        Id = entity.Id,
+        Name = entity.Name,
+        ParentId = entity.ParentId,
+        FullName = entity.FullName,
+        PartNumber = entity.PartNumber,
+        Description = entity.Description,
+        Cost = entity.Cost
+    };
+}
