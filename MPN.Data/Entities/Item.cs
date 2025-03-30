@@ -20,6 +20,9 @@ internal class Item
 
     public Item? Parent { get; set; }
 
+    [MaxLength(159)]
+    public string? FullName { get; set; }
+
     [MaxLength(31)]
     public string? PartNumber { get; set; }
 

@@ -13,7 +13,10 @@ public class Item
 
     public int? ParentId { get; set; }
 
-    public string? ParentName { get; set; }
+    public Item? ParentName { get; set; }
+
+    [MaxLength(159)]
+    public string? FullName { get; set; }
 
     [MaxLength(31)]
     public string? PartNumber { get; set; }
