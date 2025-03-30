@@ -7,6 +7,8 @@ namespace MPN.Data;
 
 internal class AppDbContext : IdentityDbContext<AppUser>
 {
+    public DbSet<Entities.Vendor> Vendors { get; set; }
+
     public AppDbContext(DbContextOptions options) : base(options)
     {
     }
